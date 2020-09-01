@@ -34,6 +34,10 @@ body {
 }
 
 .button {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 32px;
+  padding-right: 32px;
 font-weight: 700;
 font-size: 16px;
 line-height: 1.87;
@@ -44,10 +48,13 @@ letter-spacing: 0.06em;
 }
 
 .title {
-  font-size: 14px;
-font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 50px;
+  font-weight: 700;
+font-size: 36px;
+line-height: 1.16;
 letter-spacing: 0.03em;
-text-transform: uppercase;
+  text-align: center;
 
   color: var(--title-color);
 }
@@ -58,6 +65,21 @@ text-transform: uppercase;
   padding-left: 15px;
   padding-right: 15px;
   width: 1200px;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding:0 !important;
+  border:0 !important;
+  height: 1px !important; 
+  width: 1px !important; 
+  overflow: hidden;
+}
+
+img {
+  display: block;
 }
 
 /* Header */
@@ -136,43 +158,135 @@ margin-right: 93px;
 /* Герой */
 
 .hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
   background-color: var(--title-color);
 }
 
+.hero .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .main-title {
+  margin-top: 0;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
 font-weight: 900;
 font-size: 44px;
 line-height: 1.36;
 letter-spacing: 0.06em;
 text-transform: uppercase;
+text-align: center;
+
+width: 696px;
 
   color: var(--white-color);
 }
 
 /* Преимущества */
 
+.advantage {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .advantage .text {
+  margin-top: 0;
+  margin-bottom: 0;
   line-height: 1.71;
 
 letter-spacing: 0.03em;
 }
 
+.advantage-title {
+margin-top: 0;
+margin-bottom: 10px;
+font-size: 14px;
+font-weight: 700;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: var(--title-color);
+}
+
+.advantage .list {
+  display: flex;
+}
+
+.advantage .item {
+  width: 270px;
+}
+
+.advantage .item:not(:last-child) {
+  margin-right: 30px;
+}
+
 /* Чем мы занимаемся */
 
+.work {
+  margin-bottom: 94px;
+}
+
+.work .list {
+  display: flex;
+}
+
+.work .item {
+  width: 370px;
+}
+
+.work .item:not(:last-child) {
+  margin-right: 30px;
+}
 
 /* Команда */
 
+.team {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.team .list {
+  display: flex;
+}
+
+.team .item {
+  padding-bottom: 30px;
+  width: 270px;
+}
+
+.team .item:not(:last-child) {
+  margin-right: 30px;
+}
+
 .name {
+  margin-top: 0;
+  margin-bottom: 10px;
   font-weight: 500;
 font-size: 16px;
 line-height: 1.18;
 letter-spacing: 0.03em;
+text-align: center;
 color: var(--title-color);
+}
+
+.specialty {
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.photo {
+  margin-bottom: 30px;
 }
 
 /* Footer */
 
 .footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: var(--bgc-footer);
 }
 
@@ -183,6 +297,7 @@ letter-spacing: 0.03em;
 }
 
 .footer .logo {
+  margin-bottom: 30px;
   color: var(--white-color);
 }
 
@@ -194,10 +309,30 @@ letter-spacing: 0.03em;
     color: var(--white-color);
 }
 
+.footer-address .item:not(:last-child) {
+margin-bottom: 9px;
+}
+
 
 /* Portfolio */
 
+.portfolio {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.portfolio .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 /* filter */
+
+.filter {
+  display: flex;
+  margin-bottom: 50px;
+}
 
 .filter .button {
   background-color: var(--btn-filter-color);
@@ -208,12 +343,28 @@ letter-spacing: 0.03em;
 .filter .button:hover, .filter .button:focus {
   background-color: var(--accent-color);
   color: var(--white-color);
-  
+}
+
+.filter .item:not(:last-child) {
+  margin-right: 8px;
 }
 
 /* Cards */
 
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
+}
+
+.cards .item {
+  margin: 15px;
+  width: 370px;
+}
+
 .name-card {
+  margin-top: 0;
+  margin-bottom: 4px;
   font-weight: 700;
 font-size: 18px;
 line-height: 2;
@@ -222,7 +373,14 @@ color: var(--title-color);
 }
 
 .text-card {
+  margin-top: 0;
+  margin-bottom: 0;
   font-size: 16px;
 line-height: 1.87;
 letter-spacing: 0.03em;
+}
+
+.card-desc {
+  padding: 20px 24px;
+
 }
