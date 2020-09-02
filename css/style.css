@@ -366,9 +366,10 @@ margin-bottom: 9px;
 
 .cards .item {
   margin: 15px;
-  width: 370px;
-  border: 1px solid var(--cards-border-color);
+  flex-basis: 370px;
 }
+
+
 
 .name-card {
   margin-top: 0;
@@ -390,5 +391,7 @@ letter-spacing: 0.03em;
 
 .card-desc {
   padding: 20px 24px;
-
+border-left: 1px solid var(--cards-border-color);
+border-right: 1px solid var(--cards-border-color);
+border-bottom: 1px solid var(--cards-border-color);
 }
