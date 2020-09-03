@@ -86,7 +86,15 @@ img {
   display: block;
 }
 
+button {
+  cursor: pointer;
+}
+
 /* Header */
+
+.header {
+  border-bottom: 1px solid #ECECEC;
+}
 
 .logo {
 margin-right: 93px;
@@ -364,7 +372,7 @@ margin-bottom: 9px;
 
 .cards .item {
   margin: 15px;
-  flex-basis: 370px;
+  width: 370px;
 }
 
 
